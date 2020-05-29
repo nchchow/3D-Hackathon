@@ -22,6 +22,20 @@ export default class Map extends Component {
     });
 
     const defaultLayers = platform.createDefaultLayers();
+    const service = platform.getSearchService();
+
+    service.geocode(
+      {
+        q: "200 S Mathilda Ave, Sunnyvale, CA",
+      },
+      (result) => {
+        // Add a marker for each location found
+        result.items.forEach((item) => {
+          map.addObject(new H.map.Marker(item.position));
+        });
+      },
+      alert
+    );
 
     // Create an instance of the map
     const map = new H.Map(
