@@ -1,7 +1,7 @@
-// import "here-js-api/scripts/mapsjs-core";
-// import "here-js-api/scripts/mapsjs-service";
-// import "here-js-api/scripts/mapsjs-ui";
-// import "here-js-api/scripts/mapsjs-mapevents";
+import "here-js-api/scripts/mapsjs-core";
+import "here-js-api/scripts/mapsjs-service";
+import "here-js-api/scripts/mapsjs-ui";
+import "here-js-api/scripts/mapsjs-mapevents";
 // import "here-js-api/scripts/mapsjs-clustering";
 import React, { Component } from "react";
 
@@ -35,12 +35,16 @@ export default class Map extends Component {
       }
     );
 
+    const events = new H.mapevents.MapEvents(map);
+    const behavior = new H.mapevents.Behavior(events);
+    const ui = H.ui.UI.createDefault(map, defaultLayers);
+
     this.setState({ map });
   }
 
   componentWillUnmount() {
     // Cleanup after the map to avoid memory leaks when this component exits the page
-    this.state.map.dispose();
+    // this.state.map.dispose();
   }
 
   render() {
