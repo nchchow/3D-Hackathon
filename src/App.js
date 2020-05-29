@@ -1,10 +1,11 @@
 import React from "react";
-import Map from "./components/Map";
+// import RouterBrowser from "react-router-dom";
+import Home from "./components/pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <Map />
+      <Home />
     </div>
   );
 }

@@ -1,1 +1,27 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Nunito Sans Regular";
+  src: url("../components/assets/fonts/nunito-sans/nunitosans-regular.ttf");
+}
+
+@font-face {
+  font-family: "Nunito Sans Bold";
+  src: url("../components/assets/fonts/nunito-sans/nunitosans-bold.ttf");
+}
+
+@font-face {
+  font-family: "Nunito Sans Demi Bold";
+  src: url("../components/assets/fonts/nunito-sans/nunitosans-semibold.ttf");
+}
+/*# sourceMappingURL=main.css.map */

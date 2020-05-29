@@ -45,6 +45,8 @@ export default class Map extends Component {
 
   render() {
     // Set a height on the map so it will display
-    return <div ref={this.mapRef} style={{ height: "768px" }} />;
+    return (
+      <div ref={this.mapRef} style={{ height: "768px", width: "375px" }} />
+    );
   }
 }
