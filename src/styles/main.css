@@ -1,1 +1,69 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.preview {
+  max-height: 50.75rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.preview__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 23.5rem;
+  padding: 2rem 1rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.preview__item {
+  width: 47%;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.preview__item--img {
+  height: 13.4rem;
+}
+
+.preview__item--title {
+  font-family: "Nunito Sans Bold";
+  margin: 0;
+  padding: 0;
+}
+
+.preview__item--detail {
+  font-family: "Nunito Sans Regular";
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Nunito Sans Regular";
+  src: url("../assets/fonts/nunito-sans/nunitosans-regular.ttf");
+}
+
+@font-face {
+  font-family: "Nunito Sans Bold";
+  src: url("../assets/fonts/nunito-sans/nunitosans-bold.ttf");
+}
+
+@font-face {
+  font-family: "Nunito Sans Demi Bold";
+  src: url("../assets/fonts/nunito-sans/nunitosans-semibold.ttf");
+}
+/*# sourceMappingURL=main.css.map */

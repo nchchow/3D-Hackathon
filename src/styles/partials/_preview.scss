@@ -1,12 +1,34 @@
 .preview {
+  max-height: 50.75rem;
+  box-sizing: border-box;
+
   &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    max-width: 23.5rem;
+    padding: 2rem 1rem;
+    align-items: flex-start;
   }
   &__item {
+    width: 47%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     &--img {
+      height: 13.4rem;
     }
     &--title {
+      font-family: $primary-font-bold;
+      margin: 0;
+      padding: 0;
     }
     &--detail {
+      font-family: $primary-font;
+      margin: 0;
+      padding: 0;
     }
   }
 }

@@ -1,16 +1,17 @@
+@import "./partials/variables";
 @import "./partials/preview";
 
 @font-face {
   font-family: "Nunito Sans Regular";
-  src: url("../components/assets/fonts/nunito-sans/nunitosans-regular.ttf");
+  src: url("../assets/fonts/nunito-sans/nunitosans-regular.ttf");
 }
 
 @font-face {
   font-family: "Nunito Sans Bold";
-  src: url("../components/assets/fonts/nunito-sans/nunitosans-bold.ttf");
+  src: url("../assets/fonts/nunito-sans/nunitosans-bold.ttf");
 }
 
 @font-face {
   font-family: "Nunito Sans Demi Bold";
-  src: url("../components/assets/fonts/nunito-sans/nunitosans-semibold.ttf");
+  src: url("../assets/fonts/nunito-sans/nunitosans-semibold.ttf");
 }
