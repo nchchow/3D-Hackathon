@@ -1,16 +1,17 @@
 import React from "react";
 
-function Preview (){
-    return(
-        <span>This could be a preview for a Business to showcase what they have available.</span>
-        <h1>Business Name</h1>
-        <p>About</p>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-    )
+function Preview() {
+  return (
+      <div className="preview">
+          <ul className="preview__list">
+              <li className="preview__item">
+                  <img className="preview__item--img" src="" alt="" />
+                  <h2 className="preview__item--title"></h2>
+                  <p className="preview__item--detail"></p>
+              </li>
+          </ul>
+      </div>;
+  );
 }
 
 export default Preview;
