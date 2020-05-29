@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="home-page">
       <Map />
-      <Link to={"/preview"}>
+      <Link to="/preview">
         <button className="home-page__nearby-deals">
           Nearby Go Feed Me Deals
         </button>
