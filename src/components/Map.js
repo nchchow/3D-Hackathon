@@ -5,10 +5,10 @@ import "here-js-api/scripts/mapsjs-mapevents";
 import "here-js-api/scripts/mapsjs-clustering";
 
 import React from "react";
-import { API_KEY } from "../env/.env";
+
+const { REACT_APP_API_KEY } = process.env;
 
 const Map = () => {
-  console.log(API_KEY);
   return <div id="map"></div>;
 };
 
